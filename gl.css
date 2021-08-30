@@ -1,0 +1,459 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #282829;
+  height: 60px;
+  align-items: center;
+  margin-top: 0px;
+  z-index: 100;
+}
+::-webkit-scrollbar {
+  background-color: rgb(219, 219, 219);
+  width: 8px;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(114, 114, 114);
+  border-radius: 5px ;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar-links ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar-links ul li {
+  padding-right: 23px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov", sans-serif;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov", sans-serif;
+}
+
+.logo {
+  color: white;
+  padding-left: 25px;
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  font-family: "Volkhov", sans-serif;
+}
+#toggle-button {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+/*From this is the css for our nav bar end */
+
+.lp-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 95vh;
+}
+.lp-text {
+  font-family: "Noto Serif", serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 00px;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+
+.lp-body {
+  font-size: 26px;
+
+  text-align: center;
+  font-family: "Noto Serif", serif;
+}
+
+.lp-image {
+  animation: slider 24s infinite;
+  height: 300px;
+  width: 450px;
+  background-repeat: no-repeat;
+  background-size: 450px 300px;
+}
+
+.textchanger:before {
+  content: "";
+  animation: animate infinite 5s;
+}
+
+@keyframes animate {
+  0% {
+    content: "Original";
+    color: brown;
+  }
+
+  25% {
+    content: "Compatible";
+    color: rgb(255, 153, 0);
+  }
+
+  50% {
+    content: "Printer Service";
+    color: rgb(11, 63, 235);
+  }
+
+  75% {
+    content: "Printer Spare";
+    color: rgb(0, 121, 0);
+  }
+  100% {
+    content: "Original";
+    color: brown;
+  }
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(sliderone.jpg);
+  }
+  25% {
+    background-image: url(slidertwo.jpg);
+  }
+  50% {
+    background-image: url(sliderthree.jpeg);
+  }
+  75% {
+    background-image: url(sliderfour.webp);
+  }
+  100% {
+    background-image: url(sliderfive.jpg);
+  }
+}
+
+#home #home-text p {
+  font-size: 25px;
+}
+#home-text {
+  width: auto;
+  margin: 0px 10px 0px 10px;
+}
+
+#home {
+  height: 75vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.our-services {
+  padding-top: 50px;
+}
+
+.service-image img {
+  height: 150px;
+  width: 200px;
+}
+
+.service-box {
+  width: 300px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 25px;
+}
+
+.service-text {
+  text-align: center;
+}
+.price-container {
+  text-align: center;
+  font-size: 23px;
+}
+.contact {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.c-t {
+  padding-left: 4px;
+  font-size: 24px;
+}
+.c-t a {
+  text-decoration: none;
+  color: rgb(18, 72, 219);
+}
+
+.faq {
+  font-size: 21px;
+  padding-top: 100px;
+}
+.price-table {
+  padding-top: 100px;
+}
+
+td {
+  text-align: center;
+  width: 200px;
+  height: 30px;
+}
+.price-container a {
+  color: blue;
+}
+
+.trashcash {
+  color: blue;
+}
+.t-container1 {
+
+   justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 2px;
+  
+}
+
+
+.show::before{
+  content: " Show";
+  text-decoration: none;
+}
+#test:checked + .show::before{
+content: " Hide";
+text-decoration: none;
+
+}
+
+.t-container1 {
+  padding-top: 10px;
+  margin-top: 0;
+}
+.t-box {
+  height: 180px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(240, 240, 240, 0.397);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 17px;
+}
+.t-name {
+  text-align: right;
+  margin-right: 5px;
+}
+.t-stars {
+  color: rgb(255, 233, 31);
+  text-align: center;
+}
+
+.t-stars span {
+  font-size: 26px;
+}
+#checkt-label {
+  display: block;
+}
+#checkt {
+  display: none;
+}
+
+.more {
+  text-align: center;
+  font-size: 21px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.more a {
+  display: block;
+  background-color: rgba(73, 73, 73, 0.87);
+  color: white;
+  width: auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+@media screen and (max-width: 359px) {
+  #home-text {
+    width: auto;
+
+  }
+
+  
+}
+@media screen and (max-width: 400px) and (min-width:360px) {
+  #home-text {
+    width: auto;
+padding-top: 20px;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+  }
+  .faq {
+    font-size: 21px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: transparent;
+    height: 10px;
+  }
+
+  .navbar-links {
+    transform: scale(1, 0);
+
+    transform-origin: top;
+    background-color: transparent;
+  }
+  .navbar-links ul li {
+    padding-bottom: 20px;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    background-color: #282829;
+  }
+  .navbar-links ul li a {
+    opacity: 0;
+    font-family: "Volkhov", sans-serif;
+  }
+  label {
+    display: flex;
+  }
+  #toggle-button {
+    display: none;
+  }
+  #toggle-button:checked ~ .navbar-links {
+    transform: scale(1, 1);
+    transition: transform 250ms;
+  }
+  #toggle-button:checked ~ .navbar-links ul li a {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .logo {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    background-color: #282829;
+  }
+
+  .logo h1 {
+    padding: 0 0 0 0;
+  }
+  label {
+    padding-top: 30px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 19px;
+  }
+
+  /*From this is the css for our nav bar end */
+  .lp-text {
+    font-family: "Noto Serif", serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .lp-image {
+    animation: slider 24s infinite;
+    height: 200px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: 250px 200px;
+  }
+  @keyframes slider {
+    0% {
+      background-image: url(https://3.imimg.com/data3/HF/SA/MY-14735541/ink-cartridge-500x500.jpg);
+    }
+    25% {
+      background-image: url(https://images-na.ssl-images-amazon.com/images/I/71Jnxn-AN2L._SL1500_.jpg);
+    }
+    50% {
+      background-image: url(https://miro.medium.com/max/6222/1*vIiE8MdZIXhiGbkaxrqYrg.jpeg);
+    }
+    75% {
+      background-image: url(https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c03789430.png);
+    }
+    100% {
+      background-image: url(https://3.imimg.com/data3/HF/SA/MY-14735541/ink-cartridge-500x500.jpg);
+    }
+  }
+
+  .lp-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 95vh;
+    padding-top: 30px;
+  }
+
+  .lp-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #home {
+    height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    height: 110vh;
+  }
+}
+
+
