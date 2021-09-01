@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #282829;
+  background-color: rgb(40, 40, 41);
   height: 60px;
   align-items: center;
   margin-top: 0px;
-  z-index: 100;
+  z-index: 0;
 }
 ::-webkit-scrollbar {
   background-color: rgb(219, 219, 219);
@@ -375,7 +375,7 @@ padding-top: 20px;
   .logo {
     display: flex;
     text-align: center;
-    width: 100%;
+      align-items: center;
     font-size: 14px;
     background-color: #282829;
   }
@@ -383,11 +383,19 @@ padding-top: 20px;
   .logo h1 {
     padding: 0 0 0 0;
   }
+  .logo  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    width: 100%;
+  }
   label {
-    padding-top: 30px;
+    
     margin-left: 0px;
     padding-left: 0px;
-    padding-right: 19px;
+    padding-right: 30px;
+    
   }
 
   /*From this is the css for our nav bar end */
